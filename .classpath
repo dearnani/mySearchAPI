@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+  <classpathentry kind="src" path="src/test/java" output="target/test-classes" including="**/*.java"/>
+  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
+  <classpathentry kind="src" path="src/main/resources" excluding="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="var" path="M2_REPO/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.17/log4j-1.2.17.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/twitter4j/twitter4j-core/4.0.6/twitter4j-core-4.0.6.jar" sourcepath="M2_REPO/org/twitter4j/twitter4j-core/4.0.6/twitter4j-core-4.0.6-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/mockito/mockito-core/2.10.0/mockito-core-2.10.0.jar"/>
+  <classpathentry kind="var" path="M2_REPO/net/bytebuddy/byte-buddy/1.7.4/byte-buddy-1.7.4.jar"/>
+  <classpathentry kind="var" path="M2_REPO/net/bytebuddy/byte-buddy-agent/1.7.4/byte-buddy-agent-1.7.4.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/objenesis/objenesis/2.6/objenesis-2.6.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/jcabi/jcabi-github/0.23/jcabi-github-0.23.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/jcabi/jcabi-aspects/0.20.1/jcabi-aspects-0.20.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/jcabi/jcabi-log/0.16/jcabi-log-0.16.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/aspectj/aspectjrt/1.8.4/aspectjrt-1.8.4.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/jcabi/jcabi-immutable/1.3/jcabi-immutable-1.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/jcabi/jcabi-xml/0.13/jcabi-xml-0.13.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/jcabi/jcabi-http/1.10.2/jcabi-http-1.10.2.jar" sourcepath="M2_REPO/com/jcabi/jcabi-http/1.10.2/jcabi-http-1.10.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/jcabi/jcabi-manifests/1.1/jcabi-manifests-1.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/jcabi/incubator/xembly/0.19.1/xembly-0.19.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-io/commons-io/2.4/commons-io-2.4.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/google/guava/guava/18.0/guava-18.0.jar" sourcepath="M2_REPO/com/google/guava/guava/18.0/guava-18.0-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/sun/jersey/jersey-client/1.18.1/jersey-client-1.18.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/sun/jersey/jersey-core/1.18.1/jersey-core-1.18.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpcore/4.3/httpcore-4.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpclient/4.3/httpclient-4.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-codec/commons-codec/1.6/commons-codec-1.6.jar"/>
+  <classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar"/>
+</classpath>
