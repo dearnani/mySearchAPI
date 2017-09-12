@@ -1,5 +1,6 @@
 package com.wday.search.api.twitter;
 
+import java.util.Collections;
 import java.util.List;
 
 import javax.validation.constraints.NotNull;
@@ -40,10 +41,15 @@ public class TweetsSearchServiceImpl implements TweetsSearchService {
 			do {
 				queryResult = twitterAPI.search(twtApiQuery);
 				tweets = queryResult.getTweets();
+				
+				// Reversing to retrieve the recent twitter messages
+				Collections.reverse(tweets);
+				
 				noOfTweets = tweets.size();
 				
 				logger.debug(String.format("@ LIst of Statuses %s -  size: %d", tweets.toString(), noOfTweets));
 				
+				// To limit the no of twitter messages to 10
 				if (noOfTweets >= 10) 
 					noOfTweets = 9;
 				
@@ -51,7 +57,7 @@ public class TweetsSearchServiceImpl implements TweetsSearchService {
 				
 					if (!tweet.isRetweeted()) {
 						json.append(tweet.getUser().getScreenName(), tweet.getText());
-						logger.debug(String.format("@ %s - %s", tweet.getUser().getScreenName(), tweet.getText()));
+						logger.debug(String.format("@ ScreenName %s - Twitter Message-%s", tweet.getUser().getScreenName(), tweet.getText()));
 					}
 				}
 				
@@ -62,7 +68,7 @@ public class TweetsSearchServiceImpl implements TweetsSearchService {
 			}
 		} catch (TwitterException | JSONException  twitterServiceException) {
 
-			logger.error(String.format("Failed to search tweets: " + twitterServiceException.getMessage()));
+			logger.error(String.format("Failed to search tweets:Exception Occured -> searchRecentTweetByRepositoryName:" + twitterServiceException.getMessage()));
 		}
 		return json;
 	}
