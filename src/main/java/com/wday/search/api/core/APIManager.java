@@ -14,6 +14,7 @@ import com.wday.search.api.github.GitHubRepoSearchServiceImpl;
 import com.wday.search.api.twitter.TweetsSearchService;
 import com.wday.search.api.twitter.TweetsSearchServiceImpl;
 import com.wday.search.api.util.PropertyReader;
+import com.wday.search.api.util.PropertyServiceLocator;
 
 import twitter4j.JSONException;
 import twitter4j.JSONObject;
@@ -38,7 +39,7 @@ public class APIManager {
 		
 		//Get the file reference
 		
-		Path path = Paths.get( String.format("%s/Result.json", System.getProperty("user.home"))); 
+		Path path = Paths.get( String.format("%s\\%s", System.getProperty("user.home"),PropertyServiceLocator.getInstance().getProperty("json.fileName"))); 
 		//Use try-with-resource to get auto-closeable writer instance
 		try (BufferedWriter jsonFileWriter = Files.newBufferedWriter(path)) {
 		  
