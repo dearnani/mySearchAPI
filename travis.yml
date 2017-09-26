@@ -1,0 +1,5 @@
+language : java
+cache:
+  yarn: true
+  directories:
+    - node_modules
