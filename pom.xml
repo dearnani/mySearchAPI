@@ -4,7 +4,7 @@
 
 	<groupId>wday-search-api-demo</groupId>
 	<artifactId>wday-search-api-demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>jar</packaging>
 
 	<name>wday-search-api-demo</name>
